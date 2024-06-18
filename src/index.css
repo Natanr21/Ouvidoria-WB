@@ -1,0 +1,78 @@
+nav {
+	height: 50px;
+	width: auto;
+	margin: 30px 100px 15px 100px;
+	display: flex;
+	justify-content: space-around;
+	border: 2px, solid, #f23030;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.nav a {
+	position: relative;
+	color: #ffffff;
+	text-decoration: none;
+	justify-content: center;
+	align-content: center;
+	cursor: pointer;
+}
+
+.nav a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 5px; /* Distância do sublinhado em relação ao texto */
+	height: 4px; /* Espessura do sublinhado */
+	background-color: #f23030; /* Cor do sublinhado */
+	transform: scaleX(0); /* Esconde a linha inicialmente */
+	transform-origin: left;
+	transition: transform 0.3s ease; /* Animação suave */
+}
+
+.nav a:hover::after {
+	transform: scale(1);
+}
+
+.container {
+	align-content: center;
+	justify-content: center;
+	margin-top: 5em;
+}
+
+.container h1,
+h2 {
+	text-align: center;
+	margin: 15px;
+}
+
+.container h1 {
+	font-size: 50px;
+}
+
+.container h2 {
+	font-size: 24px;
+	padding-top: 50px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	margin-top: 30px;
+}
+.row span {
+	max-width: 300px;
+	height: 300px;
+	border: 2px, solid, #f23030;
+	border-radius: 15px;
+	transition: 0.5s ease-in;
+	margin: 0px 10px;
+}
+
+.row span:hover {
+	transform: scale(1.05);
+	background-color: #f23030;
+	border: none;
+}

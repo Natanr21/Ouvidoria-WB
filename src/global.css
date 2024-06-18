@@ -1,0 +1,9 @@
+* {
+	font-family: "Roboto Mono", monospace;
+}
+
+body {
+	height: 1000px;
+	background: linear-gradient(#737373 0%, #292929 0%, #0d0d0d 102%);
+	color: #ffffff;
+}
