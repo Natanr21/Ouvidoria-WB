@@ -1,0 +1,25 @@
+* {
+	font-family: "Roboto Mono", monospace;
+}
+
+body {
+	height: 1000px;
+	background: linear-gradient(#737373 0%, #292929 0%, #0d0d0d 102%);
+	color: #ffffff;
+}
+
+.nav {
+	height: 50px;
+	width: 300px;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 10px;
+	margin: 10px;
+	border: 2px, solid;
+	border-image: linear-gradient(45deg, #f23030 0%, #f2cb05 100%);
+	border-image-slice: 1;
+}
+.nav a {
+	color: #ffffff;
+	text-decoration: none;
+}
