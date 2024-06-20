@@ -1,9 +1,34 @@
 * {
 	font-family: "Roboto Mono", monospace;
+	margin: 0px;
+	padding: 0px;
 }
 
 body {
-	height: 1000px;
+	height: auto;
 	background: linear-gradient(#737373 0%, #292929 0%, #0d0d0d 102%);
 	color: #ffffff;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 15px;
+	background: #292929;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: #0d0d0d;
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	border: 2px, solid, #f23030;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #f23030d5;
 }
