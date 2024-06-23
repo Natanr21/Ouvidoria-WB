@@ -30,7 +30,7 @@
 			<h1>Cadastre-se</h1>
 		</div>
 		<form method="post">
-			<div class="container2">
+			<div class="grid">
 				<label for="Nome">Nome Completo:</label>
 				<input class="form-control" type="text" id="nome" required />
 				<label for="data">Data de Nascimento:</label>
@@ -42,15 +42,44 @@
 					placeholder="nome@exemplo.com"
 					id="email"
 					required />
-                <button type=""
 				<label for="telefone">Telefone:</label>
 				<input
 					type="number"
 					class="form-control"
 					id="telefone"
-					placeholder="(99) 99999-9999" />
+					placeholder="(99) 99999-9999"
+					required />
 				<label for="whatsapp">Whatsapp</label>
+				<input
+					type="number"
+					class="form-control"
+					id="whatsapp"
+					placeholder="(99) 99999-9999" />
 			</div>
+			<div class="row" id="cidEst">
+				<select class="form-select" aria-label="Default select example">
+					<option selected>Open this select menu</option>
+					<option value="1">One</option>
+					<option value="2">Two</option>
+					<option value="3">Three</option>
+				</select>
+				<select class="form-select" aria-label="Default select example">
+					<option selected>Open this select menu</option>
+					<option value="1">One</option>
+					<option value="2">Two</option>
+					<option value="3">Three</option>
+				</select>
+			</div>
+			<div class="row">
+				<label for="senha">Senha:</label>
+				<input type="password" class="form-control" id="senha" required />
+			</div>
+			<div class="row">
+				<label for="conSenha">Confirme sua senha:</label>
+				<input type="password" class="form-control" id="conSenha" required />
+			</div>
+			<button type="button" class="btn">Cadastre-se</button>
+			<button type="button" class="btn">Cancelar</button>
 		</form>
 	</body>
 </html>
