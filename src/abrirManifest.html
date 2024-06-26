@@ -25,5 +25,25 @@
 		<link rel="stylesheet" href="./global.css" />
 		<title>Abrir Manifesto</title>
 	</head>
-	<body></body>
+	<body>
+		<div class="container">
+			<form method="get">
+				<label for="textArea" class="form-label">Descrição do caso:</label>
+				<textarea
+					class="form-control"
+					id="textArea"
+					rows="5"
+					required></textarea>
+				<label for="textArea2" class="form-label">Tipo de serviço afetado:</label>
+				<textarea
+					class="form-control"
+					id="textArea2"
+					rows="1"
+					required></textarea>
+				<label for="anexo" class="form-label">Anexo:</label>
+				<input class="form-control" type="file" id="anexo" multiple />
+				<button class="btn" type="submit">Enviar</button>
+			</form>
+		</div>
+	</body>
 </html>
